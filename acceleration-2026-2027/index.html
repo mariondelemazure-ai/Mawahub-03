@@ -111,8 +111,8 @@
     { t: 'Programmes MawaHub' },
     { t: 'MawaHub 03 · Programme d’accélération' },
     { t: 'Déroulé du programme d’accélération' },
-    { t: 'Accélération · Nebul’Art', links: [{ x: 474.5, y: 309, w: 226.4, h: 9.5, href: 'http://www.fibda-dz.com/about.html', label: 'FIBDA' }, { x: 704.6, y: 309, w: 29.3, h: 9.5, href: 'https://www.makma.com/', label: 'Makma' }] },
-    { t: 'Accélération · Last Lion Studio', links: [{ x: 704.5, y: 365.5, w: 50.1, h: 9.5, href: 'https://www.isart.fr/', label: 'ISART Digital' }, { x: 760.6, y: 365.5, w: 43.9, h: 9.5, href: 'https://www.playstation.com/fr-fr/', label: 'PlayStation' }, { x: 514, y: 449, w: 130, h: 10, href: 'https://gamesbeat.com/', label: 'GamesBeat' }, { x: 514, y: 459, w: 119, h: 10, href: 'https://www.womeningames.org/', label: 'Women in Games' }, { x: 465, y: 478.4, w: 126.7, h: 18.5, href: 'https://www.lastlionstudio.com/', label: 'Site web de Last Lion Studio' }, { x: 597.7, y: 478.4, w: 122.3, h: 18.5, href: 'https://www.instagram.com/lastlionstudio/', label: 'Instagram de Last Lion Studio' }] },
+    { t: 'Accélération · Nebul’Art', links: [{ x: 472, y: 304, w: 231, h: 19, href: 'http://www.fibda-dz.com/about.html', label: 'FIBDA' }, { x: 703, y: 304, w: 33, h: 19, href: 'https://www.makma.com/', label: 'Makma' }] },
+    { t: 'Accélération · Last Lion Studio', links: [{ x: 702, y: 360, w: 54, h: 19, href: 'https://www.isart.fr/', label: 'ISART Digital' }, { x: 758, y: 360, w: 48, h: 19, href: 'https://www.playstation.com/fr-fr/', label: 'PlayStation' }, { x: 511, y: 446, w: 136, h: 12.5, href: 'https://gamesbeat.com/', label: 'GamesBeat' }, { x: 511, y: 458.5, w: 125, h: 12.5, href: 'https://www.womeningames.org/', label: 'Women in Games' }, { x: 465, y: 478.4, w: 126.7, h: 18.5, href: 'https://www.lastlionstudio.com/', label: 'Site web de Last Lion Studio' }, { x: 597.7, y: 478.4, w: 122.3, h: 18.5, href: 'https://www.instagram.com/lastlionstudio/', label: 'Instagram de Last Lion Studio' }] },
     { t: 'Accélération · Trendify' },
     { t: 'Accélération · zLABsh' },
     { t: 'Accélération · Les Petits Bâtisseurs' },
@@ -125,7 +125,7 @@
     const fig = document.createElement('figure');
     fig.id = 'slide-' + (i + 1);
     fig.innerHTML = `<figcaption><em>${pad(i + 1)} / ${SLIDES.length}</em>${s.t}</figcaption>
-      <div class="slide"><img src="slides/slide-${pad(i + 1)}.jpg" alt="Slide ${i + 1} : ${s.t}" ${i > 1 ? 'loading="lazy"' : ''}></div>`;
+      <div class="slide"><img src="slides/slide-${pad(i + 1)}.jpg?v=202611081504" alt="Slide ${i + 1} : ${s.t}" ${i > 1 ? 'loading="lazy"' : ''}></div>`;
     const box = fig.querySelector('.slide');
     (s.v || []).forEach(([name, file], k) => {
       const b = document.createElement('button');
